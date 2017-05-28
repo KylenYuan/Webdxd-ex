@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Brandon';
+    src: url(fonts/Brandon_reg.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(fonts/Brandon_med.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Brandon';
+    src: url(fonts/Brandon_thin.otf);
+    font-weight: 100;
+}
+*{
+  font-family:"Brandon", Helvetica;
+  /*(brandon没有的话就用内置的helvetica)*/
+  /*＊是选中所有items*/
+}
+#background{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+.container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav{
+  margin-top:10px;
+}
+
+#logo-wrapper{
+  width: 20%;
+}
+
+#logo{
+  /*border-radius: 50%;*/
+  border-radius: 30px;
+  width: 100px;
+}
+
+#menu-wrapper{
+  width: 80%;
+  text-align: right;
+}
+
+#menu a li{
+  display: inline-block;
+  color: #d84f49;
+  font-size: 24px;
+  padding: 0 30px;
+  font-weight: bold;
+}
+
+#menu li:hover{
+  color: white;
+  cursor: pointer;
+  /*https://www.w3schools.com/cssref/pr_class_cursor.asp*/
+}
+.inline-block{
+  display: inline-block;
+}
+.vertical-align{
+  vertical-align:middle;
+}
+.center{
+  text-align: center;
+}
+#slogan{
+  margin-top: 100px;
+}
+#slogan h1{
+  font-size: 3em;
+  font-weight: bold;
+}
+#slogan h2{
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.row{
+  width: 80%;
+  padding: 50px;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+.round{
+  border-radius:50%;
+}
+.left{
+  float:left;
+  width: 50%;
+  position: relative;
+  display: inline-block;
+}
+.left span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: red;
+    padding: 10px;
+        transform: translateX(-50%) translateY(-50%);
+}
+
+.right{
+  float: right;
+  width: 50%;
+  position: relative;
+}
+
+.left img{
+  width: 100%;
+}
+.right img{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+ .left h2, .left p{
+   width: 75%;
+   float: right;
+ }
+
+ .right h2, .right p{
+   width: 75%;
+   float: left;
+ }
+
+row h2{
+     font-size: ;
+ }
+.row h2{
+  font-size:20px;
+}
+html, body{
+  height: 100%;
+  position: relative;
+}
+footer{
+  width: 100%;
+  background-color:#333;
+  padding:30px 0;
+  position: relative;
+  text-align: center;
+  color: white;
+  bottom: 0;
+}
+
+.clearfloat{
+      clear: both;
+    }
+
+form, label,form input, form textarea{
+  display: block;
+}
+
+form label{
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+form input, form textarea, form button{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #b2b2b2;
+}
+form{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
+}
+
+form button{
+  background-color:#43b3ff;
+  border:2px solid#3680b2;
+  color: white;
+  margin-top:30px;
+}
+form textarea{
+  height: 200px;
+}
+input, textarea{
+  box-sizing:border-box;
+  padding: 9px;
+  font-size: 12px;
+}
+#contact-me{
+   font-size:30px;
+}
+
+#user-container {
+    padding: 20px;
+    position: relative;
+}
+.search,.search-btn{
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.search-btn{
+  background-color: #26ABFF;
+  color: white;
+}
+
+.user {
+    background-color: rgba(255,255,255,.5);
+    border: 5px solid #e0e0e0;
+    display: inline-block;
+    padding: 15px;
+}
+
+.user p span {
+    background-color: #26ABFF;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    color: white;
+}
+
+
+@media(max-width: 500px){
+    form button{
+        background-color: red;
+    }
+
+footer{
+  position:relative;
+  bottom:0;
+  width:100%;
+  height:100px;
+}
